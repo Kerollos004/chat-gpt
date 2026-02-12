@@ -1,0 +1,52 @@
+.side-bar{
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 30px 20px;
+    border-right: 2px solid white;
+    overflow-y: scroll;
+    background-color: #242424;
+}
+.side-bar::-webkit-scrollbar{
+    display: none;
+}
+.title{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(79, 79, 212);
+}
+.side-bar .chats a{
+    padding: 15px ;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    display: inline-block;
+    color: rgb(79, 79, 212);
+    margin-top: 15px;
+}
+.chats h1{
+    color: white;
+}
+.side-bar .chats a:hover{
+    background-color: rgb(79, 79, 212);
+    color: white;
+}
+.side-bar .chats .chat{
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(89, 86, 86, 0.5);
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .side-bar{
+        left: -200%;
+    }
+}
